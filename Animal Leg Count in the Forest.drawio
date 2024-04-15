@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" modified="2024-04-15T02:21:27.621Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="uQpPZ41d24Ke9rELFSKr" version="24.2.3" type="device">
+  <diagram name="Page-1" id="yV1uJEJ0poBE9ptn63wo">
+    <mxGraphModel dx="2284" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-12" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Clarifying Questions&lt;/font&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;1.&amp;nbsp; Are we supposed to take identifying four leg animals as a task? (amending the list of known four leg animals based on common sense if we see new user input array containing four leg animals not in the original known animal list&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;2.&amp;nbsp; What is relatively more important? Time or space complexity?&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="185" width="460" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-16" value="Start&lt;div&gt;Set counter of four leg animals, count = 0&lt;/div&gt;&lt;div&gt;pointer to help go through the pending processing animal list (list A),&amp;nbsp; i = 0&lt;/div&gt;&lt;div&gt;pointer to help go through the&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;known four leg animal list (list B),&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;j = 0&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2" y="130" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-17" value="Get element j in the known four leg animal list (list B)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-18" value="Get element i in the to-be-processed animal list (list A)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-19" target="WJD12dbH6r5S4Xax3hJ5-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-19" value="Element i in list A =&amp;nbsp;&lt;div&gt;element j in list B?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="382" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-16" target="WJD12dbH6r5S4Xax3hJ5-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="252" y="210" as="sourcePoint" />
+            <mxPoint x="-128" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-18" target="WJD12dbH6r5S4Xax3hJ5-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="252" y="279" as="sourcePoint" />
+            <mxPoint x="252" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-17" target="WJD12dbH6r5S4Xax3hJ5-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="321" y="200" as="sourcePoint" />
+            <mxPoint x="321" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="252" y="380" as="sourcePoint" />
+            <mxPoint x="242" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-28" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="242" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-41" target="WJD12dbH6r5S4Xax3hJ5-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="462" as="sourcePoint" />
+            <mxPoint x="-128" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="40" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-34" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-35" target="WJD12dbH6r5S4Xax3hJ5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-35" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Move to next item in list B (j=j+1)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="412" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-41" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Move to next item in list A (i=i+1)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Reset j = 0&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="652" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-43" value="Is i the last item in List A?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="622" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-43" target="WJD12dbH6r5S4Xax3hJ5-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="632" as="sourcePoint" />
+            <mxPoint x="402" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-45" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="642" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-46" value="Is j the last item in List B?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="382" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WJD12dbH6r5S4Xax3hJ5-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="442" as="sourcePoint" />
+            <mxPoint x="390" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-48" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-43" target="WJD12dbH6r5S4Xax3hJ5-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="622" as="sourcePoint" />
+            <mxPoint x="240" y="772" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-50" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="772" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-51" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="732" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-54" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="492" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-55" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-46" target="WJD12dbH6r5S4Xax3hJ5-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="452" as="sourcePoint" />
+            <mxPoint x="450" y="402" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="682" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-56" value="&lt;div&gt;Increase the count by 1 (count = count +1)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="522" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WJD12dbH6r5S4Xax3hJ5-56" target="WJD12dbH6r5S4Xax3hJ5-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="642" as="sourcePoint" />
+            <mxPoint x="250" y="592" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WJD12dbH6r5S4Xax3hJ5-62" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;Time Complexity: O(N)&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;Space Complexity:&amp;nbsp; O(1)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;Improvement: HashMap&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="622" width="460" height="85" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
