@@ -1,0 +1,37 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        String[] animalsSample1 = {"lion", "monkey", "deer", "snake", "elephant"};
+        System.out.println("Example 1: " + countAnimalsWithFourLegs(animalsSample1)); // Output: 3
+
+        String[] animalsSample2 = {"frog", "horse", "spider", "ant"};
+        System.out.println("Example 2: " + countAnimalsWithFourLegs(animalsSample2)); // Output: 1
+
+        String[] animalsTest1 = {};
+        System.out.println("Test 1 (List is empty): " + countAnimalsWithFourLegs(animalsTest1)); // Output: 0
+
+        String[] animalsTest2 = {"snake", "monkey", "bird"};
+        System.out.println("Test 2 (No four leg animal): " + countAnimalsWithFourLegs(animalsTest2)); // Output: 0
+
+        String[] animalsTest3 = {"lion", "lion", "lion", "lion", "dog", "dog"};
+        System.out.println("Test 3 (Having repeated animals): " + countAnimalsWithFourLegs(animalsTest3)); // Output: 6
+    }
+
+    public static int countAnimalsWithFourLegs(String[] animals) {
+        // Define the animals with four legs
+        String[] animalsWithFourLegs = {"lion", "deer", "elephant", "horse", "dog", "cat"};
+
+        int count = 0;
+        for (int i = 0; i < animals.length; i++) {
+            for (int j = 0; j < animalsWithFourLegs.length; j++) {
+                if (animals[i].equals(animalsWithFourLegs[j])) {
+                    count++;
+                    break;
+                }
+            }
+        }
+
+        return count;
+    }
+}
